@@ -17,3 +17,73 @@ Usage:
 These functions can be imported and used in other modules or integrated into APIs
 to perform arithmetic operations based on user input.
 """
+from typing import Union
+
+# type alias for number that can be either int or float
+Number = Union[int, float]
+
+def add(a: Number, b: Number) -> Number:
+    """
+    Add two numbers and returns result
+
+    Parameters:
+    - a (int or float): first operand.
+    - b (int or float): second operand.
+    
+    Retruns:
+    - int or float: sum of a and b
+    """
+
+    result = a + b
+    return result
+
+
+def subtract(a: Number, b: Number) -> Number:
+    """
+    subtract one number from other and returns result
+
+    Parameters:
+    - a (int or float): first operand.
+    - b (int or float): second operand.
+    
+    Retruns:
+    - int or float: difference of b from a
+    """
+
+    result = a - b
+    return result
+
+def multiply(a: Number, b: Number) -> Number:
+    """
+    Add two numbers and return results
+
+    Parameters:
+    - a (int or float): first operand.
+    - b (int or float): second operand.
+    
+    Retruns:
+    - int or float: product of a and b
+    """
+
+    result = a * b
+    return result
+
+def divide(a: Number, b: Number) -> Number:
+    """
+    Add two numbers and return results
+
+    Parameters:
+    - a (int or float): first operand.
+    - b (int or float): second operand.
+    
+    Retruns:
+    - int or float: sum of a and b
+    """
+
+    if b == 0:
+        raise ValueError("Cannot divide by zero!")
+
+    result = a / b
+    return result
+
+
